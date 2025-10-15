@@ -1,0 +1,5 @@
+templates:
+  - filename: sample_layout.xml
+    template_name: Sample Catalog
+  - filename: sample_layout_alt.xml
+    template_name: Another Catalog

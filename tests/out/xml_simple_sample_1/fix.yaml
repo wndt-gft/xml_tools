@@ -1,0 +1,6 @@
+ok: true
+errors: []
+xml: "<catalog name=\"Sample Catalog\">\n  <layout id=\"L1\">\n    <name>Layout A</name>\n    <description>Layout de demonstração</description>\n\
+  \  </layout>\n  <item id=\"i1\">\n    <name>Item Foo</name>\n    <documentation>Doc Foo</documentation>\n  </item>\n  <item\
+  \ id=\"i2\">\n    <name>Item Bar</name>\n    <documentation>Doc Bar</documentation>\n  </item>\n<item id=\"i3\"><name>Item\
+  \ Baz</name><documentation>Doc Baz</documentation></item></catalog>"

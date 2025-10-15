@@ -1,0 +1,41 @@
+templates:
+- filename: mocks\xml_simple_sample_1\sample_layout.xml
+  template_name: Sample Catalog
+  layout_name: Layout de demonstração
+  document:
+    tag: catalog
+    attrs:
+      name: Sample Catalog
+  elements:
+  - tag: layout
+    name: Layout A
+    description: Layout de demonstração
+    attrs:
+      id: L1
+  - tag: item
+    name: Item Foo
+    description: Doc Foo
+    attrs:
+      id: i1
+  - tag: item
+    name: Item Bar
+    description: Doc Bar
+    attrs:
+      id: i2
+- filename: mocks\xml_simple_sample_1\sample_layout_alt.xml
+  template_name: Another Catalog
+  layout_name: Segundo layout
+  document:
+    tag: catalog
+    attrs:
+      name: Another Catalog
+  elements:
+  - tag: layout
+    name: Layout B
+    description: Segundo layout
+    attrs:
+      id: L2
+  - tag: group
+    name: Group One
+    attrs:
+      id: g1

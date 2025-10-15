@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Another Catalog">
+  <layout id="L2">
+    <name>Layout B</name>
+    <description>Segundo layout</description>
+  </layout>
+  <group id="g1">
+    <name>Group One</name>
+    <note>Some note text</note>
+  </group>
+</catalog>

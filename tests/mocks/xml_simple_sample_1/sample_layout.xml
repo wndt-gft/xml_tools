@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Sample Catalog">
+  <layout id="L1">
+    <name>Layout A</name>
+    <description>Layout de demonstração</description>
+  </layout>
+  <item id="i1">
+    <name>Item Foo</name>
+    <documentation>Doc Foo</documentation>
+  </item>
+  <item id="i2">
+    <name>Item Bar</name>
+    <documentation>Doc Bar</documentation>
+  </item>
+</catalog>
