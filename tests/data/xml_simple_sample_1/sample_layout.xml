@@ -2,7 +2,7 @@
 <catalog name="Sample Catalog">
   <layout id="L1">
     <name>Layout A</name>
-    <description>Layout de demonstração</description>
+    <description>Demo layout</description>
   </layout>
   <item id="i1">
     <name>Item Foo</name>

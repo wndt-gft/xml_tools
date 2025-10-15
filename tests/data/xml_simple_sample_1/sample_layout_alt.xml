@@ -2,7 +2,7 @@
 <catalog name="Another Catalog">
   <layout id="L2">
     <name>Layout B</name>
-    <description>Segundo layout</description>
+    <description>Secondary layout</description>
   </layout>
   <group id="g1">
     <name>Group One</name>

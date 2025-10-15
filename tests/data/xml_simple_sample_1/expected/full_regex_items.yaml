@@ -1,0 +1,17 @@
+full_datamodel:
+  - tag: item
+    attrs:
+      id: i1
+    children:
+      - tag: name
+        text: Item Foo
+      - tag: documentation
+        text: Doc Foo
+  - tag: item
+    attrs:
+      id: i2
+    children:
+      - tag: name
+        text: Item Bar
+      - tag: documentation
+        text: Doc Bar

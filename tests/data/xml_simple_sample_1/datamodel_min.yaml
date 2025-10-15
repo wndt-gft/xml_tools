@@ -1,6 +1,7 @@
 min_datamodel:
   - tag: item
-    attrs: {id: i3}
+    attrs:
+      id: i3
     children:
       - tag: name
         text: Item Baz

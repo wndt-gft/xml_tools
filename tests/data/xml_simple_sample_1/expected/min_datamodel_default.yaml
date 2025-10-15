@@ -1,13 +1,16 @@
 min_datamodel:
   - tag: layout
     name: Layout A
-    documentation: Layout de demonstração
-    attrs: {id: L1}
+    documentation: Demo layout
+    attrs:
+      id: L1
   - tag: item
     name: Item Foo
     documentation: Doc Foo
-    attrs: {id: i1}
+    attrs:
+      id: i1
   - tag: item
     name: Item Bar
     documentation: Doc Bar
-    attrs: {id: i2}
+    attrs:
+      id: i2
