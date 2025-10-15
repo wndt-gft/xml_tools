@@ -3,7 +3,6 @@ name: CI
 on:
   push:
     branches: ["main"]
-    tags: ["v*"]
   pull_request:
 
 jobs:
@@ -40,16 +39,31 @@ jobs:
           name: dist
           path: dist
 
-  publish:
+  release:
     needs: build
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/')
+    if: github.ref == 'refs/heads/main'
     steps:
+      - uses: actions/checkout@v4
+      - name: Extract version
+        id: version
+        run: |
+          VERSION=$(python - <<'PY'
+import tomllib
+from pathlib import Path
+data = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))
+print(data["project"]["version"])
+PY
+)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist
       - name: Publish release
-        uses: softprops/action-gh-release@v2
+        uses: ncipollo/release-action@v1
         with:
-          files: dist/*
+          tag: v${{ steps.version.outputs.version }}
+          name: xml-tools v${{ steps.version.outputs.version }}
+          artifacts: dist/*
+          allowUpdates: true

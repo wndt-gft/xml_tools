@@ -128,9 +128,9 @@ Coverage is enforced through the `coverage` configuration (`fail_under = 80`).
 GitHub Actions workflow (`.github/workflows/ci.yml`) runs on pushes and pull requests:
 1. **Tests**: install dependencies, run `pytest` with coverage threshold.
 2. **Build**: produce wheel and source distribution via `python -m build`.
-3. **Publish** (tagged releases only): attach distribution artifacts to a GitHub release using the provided `GITHUB_TOKEN`.
+3. **Release** (automatic for `main`): create or update the GitHub release tagged `v<version>` with the freshly built artifacts.
 
-Ensure tags follow `v*` (for example `v0.1.0`) to trigger the publish stage.
+Update the version in `pyproject.toml` before merging to `main` so the release tag stays in sync.
 
 ## Release & Publishing
 - Update `pyproject.toml` version.
